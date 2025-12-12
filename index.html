@@ -1,1 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty Studio by VISAGEHALL</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Главное меню для десктопа и планшета -->
+    <header class="main-header">
+        <div class="container header-container">
+            <div class="logo">
+                <span class="logo-text">beauty studio</span>
+            </div>
+            <nav class="main-nav" id="mainNav">
+                <ul class="nav-list">
+                    <li><a href="#about" class="nav-link">О студии</a></li>
+                    <li><a href="#services" class="nav-link">Услуги</a></li>
+                    <li><a href="#masters" class="nav-link">Мастера</a></li>
+                </ul>
+            </nav>
+            <a href="tel:+70000000000" class="phone-link">
+                <i class="fas fa-phone-alt"></i>
+                <span class="phone-number">+7 (000) 000-00-00</span>
+            </a>
+            <!-- Кнопка для открытия мобильного меню -->
+            <button class="menu-toggle" id="menuToggle" aria-label="Открыть меню">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
 
+    <!-- Мобильное меню (открывается поверх контента) -->
+    <div class="mobile-menu-overlay" id="mobileMenu">
+        <div class="mobile-menu-container">
+            <button class="mobile-menu-close" id="closeMenu" aria-label="Закрыть меню">
+                <i class="fas fa-times"></i>
+            </button>
+            <nav class="mobile-nav">
+                <ul class="mobile-nav-list">
+                    <li><a href="#about" class="mobile-nav-link">О студии</a></li>
+                    <li><a href="#services" class="mobile-nav-link">Услуги</a></li>
+                    <li><a href="#masters" class="mobile-nav-link">Мастера</a></li>
+                </ul>
+            </nav>
+            <a href="tel:+70000000000" class="mobile-phone-link">
+                <i class="fas fa-phone-alt"></i>
+                <span>+7 (000) 000-00-00</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Основное содержимое страницы -->
+    <main>
+        <!-- Герой-секция -->
+        <section class="hero" id="hero">
+            <div class="container">
+                <h1 class="hero-title">beauty studio</h1>
+                <p class="hero-subtitle">Beauty Studio – это услуги, ставшие хитами; это средства, заслужившие место №1 в вашем сердце; это красота, неподвластная времени.</p>
+            </div>
+        </section>
+
+        <!-- Секция "О студии" -->
+        <section class="section about-section" id="about">
+            <div class="container">
+                <h2 class="section-title">beauty studio</h2>
+                <div class="about-content">
+                    <p class="about-text">
+                        Вы выбираете естественную красоту, над которой не властны обстоятельства и время. Самые глубокие пилинги. Самые эффективные массажи. Самые деликатные отношения с кожей и волосами.
+                    </p>
+                    <p class="about-text">
+                        Авторские сеансы маникюра: найдется история для любого настроения. Jo Malone London – если хочется нежности. TOM FORD – если хочется роскоши. Oribe – если хочется арома-блаженства. Zielinski & Rozen – если хочется заботливого ухода. La Ric – если хочется релакса.
+                    </p>
+                    <p class="about-text">
+                        Только лучшие средства для ухода за кожей из категории PROF. Из тысячи марок у нас только те, что входят в ваш ежедневный уход. Babor, Ultraceuticals, Zein Obagi, Holy Land. За каждым именем – история, за каждым продуктом – результат.
+                    </p>
+                    <p class="about-text">
+                        Любовь к себе не по особому случаю, а каждый день. Вместе с нами. Заведите эту привычку прямо сейчас, оформив первую (или очередную) запись в Beauty Studio.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция "Услуги" -->
+        <section class="section services-section" id="services">
+            <div class="container">
+                <h2 class="section-title">Услуги</h2>
+
+                <!-- Вкладки для выбора категории услуг -->
+                <div class="services-tabs" id="servicesTabs">
+                    <button class="tab-btn active" data-tab="nails">NAIL-СЕРВИС</button>
+                    <button class="tab-btn" data-tab="stylists">СТИЛИСТЫ</button>
+                </div>
+
+                <!-- Контент вкладок -->
+                <div class="tab-content active" id="nailsContent">
+                    <!-- NAIL-СЕРВИС контент будет подгружен JS -->
+                </div>
+                <div class="tab-content" id="stylistsContent">
+                    <!-- СТИЛИСТЫ контент будет подгружен JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция "Мастера" -->
+        <section class="section masters-section" id="masters">
+            <div class="container">
+                <h2 class="section-title">Мастера</h2>
+                <div class="masters-grid">
+                    <!-- Карточки мастеров будут сгенерированы JS -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p class="footer-copyright">© beauty studio</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
